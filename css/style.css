@@ -1,0 +1,629 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #1a1a1a;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Container Utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Links & Buttons */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn1, .btn2 {
+  display: inline-block;
+  border-radius: 25px;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.btn1 {
+  background-color: #3CAB90;
+  color: #ffffff;
+  height: 41px;
+  width: 173px;
+  border-radius: 109px;
+  gap: 10px;
+  opacity: 1;
+  padding: 12px 34px;
+}
+
+.btn2 {
+  background-color: #ffcc00;
+  color: #000;
+  height: 41px;
+  width: 208px;
+  border-radius: 109px;
+  gap: 10px;
+  padding: 12px 34px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Container inside header */
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.container-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0B9586;
+  padding: 1rem 3rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: #0B9586;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.logo {
+  width: 157px;
+  height: 54px;
+  background: #0000000F;
+  opacity: 50%;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.94px;
+}
+
+.home-link {
+  display: inline-block;
+  width: 110px;
+  height: 38px;
+  padding: 8px 28px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 3px 0 #116f66;
+  text-align: center;
+  line-height: 22px;
+  background: #0000000F;
+}
+
+/* Contact Section in Header */
+.contact p {
+  color: #ffffff;
+  text-align: right;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0.94px;
+}
+
+.contact a {
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.94px;
+}
+
+/* Hero Section with Background Image */
+.hero {
+  background: url("../assets/images/solar-panels-meadow 1.png");
+  background-size: cover;
+  padding: 4rem 0;
+  color: #fff;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  flex: 1 1 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: -2%;
+}
+
+.hero-subtitle {
+  color: white;
+}
+
+.hero-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+/* Intro Section */
+h2 {
+  padding-top: 0%;
+}
+
+.intro {
+  padding: 4rem 0;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.intro-heading-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: nowrap;
+}
+
+.intro-text {
+  flex: 1 1 60%;
+  max-width: none;
+}
+
+.intro-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  line-height: 1.6;
+  color: #101828;
+  margin-bottom: 1rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+
+#intro-desc {
+  color: #475467;
+}
+
+.list-number {
+  color: #84BD3A;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.intro-image-wrapper {
+  flex: 1 1 40%;
+  position: relative;
+  display: inline-block;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 469px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Yellow Box Overlay */
+.yellow-box {
+  position: absolute;
+  bottom: 10%;
+  left: -20%;
+  background-color: #FFCC00;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yellow-box-icon img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.5rem;
+}
+
+.yellow-box-text {
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #000;
+}
+
+/* Slide Indicator Style */
+.slide-indicator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.slide-indicator .line {
+  position: relative;
+  width: 80px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+}
+
+.slide-indicator .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Section 3 styles */
+.section3 {
+  background: url("../assets/images/8116 1.png");
+  background-size: cover;
+  padding: 4rem 0;
+  color: #fff;
+  position: relative;
+}
+
+.sec3-background {
+  flex: 1 1 40%;
+  text-align: center;
+  width: 1440px;
+  height: 505px;
+  opacity: 1;
+  gap: 10px;
+}
+
+.sec3-content {
+  text-align: left;
+}
+
+.btn3 {
+  width: 173px;
+  height: 41px;
+  opacity: 1;
+  gap: 10px;
+  padding: 12px 34px;
+  border-radius: 109px;
+  background-color: #FFBB1C;
+  color: black;
+}
+
+/* Solar Kits Section */
+.Solar-Kits {
+  padding-bottom: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.sec3-heading {
+  padding-top: 3rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+}
+
+.section-description {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.kits-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kit-card {
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.kit-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.kit-content {
+  padding: 1.5rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.kit-title {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.kit-description {
+  color: #475467;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.kit-link {
+  color: #12B76A;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.kit-link:hover {
+  text-decoration: underline;
+}
+
+/* Section 4 styling */
+.Section-4 {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background: url("../assets/images/section-4bg.png") no-repeat center center/cover;
+  position: relative;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.overlay h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.overlay p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sec4-desc {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+}
+
+/* Energy Innovators Section */
+.innovators-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.innovators-section h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.innovators-section p {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innovators-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.innovator-card {
+  background-color: #3CAB900D;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+  border: #3CAB90;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.innovator-card .card-image {
+  height: 100px;
+  background-color: #3CAB90;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.innovator-card h3 {
+  color: #000000;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.innovator-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.innovator-card .view-link {
+  color: #3CAB90;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.innovator-card .view-link:hover {
+  text-decoration: underline;
+}
+
+/* Our Values Section */
+.values-section {
+  padding: 4rem 0;
+  background-color: #f0f8f0;
+  text-align: center;
+}
+
+.values-section h2 {
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.values-section .subtext {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.values-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.value-card {
+  background-color: #e0f2e9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.value-card .value-icon {
+  height: 50px;
+  background-color: #c0e0d1;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+.value-card h3 {
+  color: #2e7d32;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .innovators-cards, .values-cards {
+    grid-template-columns: 1fr;
+  }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .intro-heading-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .kits-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
