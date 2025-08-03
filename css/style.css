@@ -486,8 +486,18 @@ p {
 /* Energy Innovators Section */
 .innovators-section {
   padding: 4rem 0;
-  background-color: #ffffff;
-  text-align: center;
+  background-color: #FFBB1C0D;
+}
+
+.innovators-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: nowrap;
+}
+
+.innovators-text {
+  flex: 1 1 40%;
 }
 
 .innovators-section h2 {
@@ -495,23 +505,20 @@ p {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
+  text-align: left;
 }
 
 .innovators-section p {
   color: #666;
   margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
 }
 
 .innovators-cards {
+  flex: 1 1 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 
 .innovator-card {
@@ -556,12 +563,12 @@ p {
 /* Our Values Section */
 .values-section {
   padding: 4rem 0;
-  background-color: #f0f8f0;
+  background-color: #FFBB1C0D;
   text-align: center;
 }
 
 .values-section h2 {
-  color: #2e7d32;
+  color: #000000;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -585,21 +592,24 @@ p {
 }
 
 .value-card {
-  background-color: #e0f2e9;
+  background-color: #3CAB900D;
   padding: 1.5rem;
   border-radius: 10px;
   text-align: left;
+  border: #3CAB90;
+  border-style: solid;
+  border-width: 2px;
 }
 
 .value-card .value-icon {
-  height: 50px;
-  background-color: #c0e0d1;
+  height: 100px;
+  background-color: #3CAB90;
   margin-bottom: 1rem;
   border-radius: 5px;
 }
 
 .value-card h3 {
-  color: #2e7d32;
+  color: #000000;
   margin: 0.5rem 0;
   font-size: 1.5rem;
 }
@@ -611,7 +621,14 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .innovators-cards, .values-cards {
+  .innovators-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .innovators-cards {
+    grid-template-columns: 1fr;
+  }
+  .values-cards {
     grid-template-columns: 1fr;
   }
   .hero .container {
