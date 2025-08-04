@@ -1451,8 +1451,13 @@ p {
   padding: 20px;
   padding-top: 70px;
   padding-bottom: 60px;
-  
+}
 
+.footer-divider {
+  border: none;
+  height: 2px;
+  background-color: rgba(113, 119, 125, 1);
+  margin: 20px 0;
 }
 
 .footer-top {
