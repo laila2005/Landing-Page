@@ -486,7 +486,11 @@ p {
 /* Energy Innovators Section */
 .innovators-section {
   padding: 4rem 0;
-  background-color: #FFBB1C0D;
+ 
+}
+
+#bg-color{
+ background-color: rgba(255, 187, 28, 0.05);
 }
 
 .innovators-wrapper {
@@ -538,6 +542,15 @@ p {
   border-radius: 5px;
 }
 
+.card-image{
+   background: url("../assets/images/image 9.png") no-repeat center center/cover;
+   width: 225;
+   height: 49;
+   mix-blend-mode: Luminosity;
+
+   
+  }
+
 .innovator-card h3 {
   color: #000000;
   margin: 0.5rem 0;
@@ -563,12 +576,12 @@ p {
 /* Our Values Section */
 .values-section {
   padding: 4rem 0;
-  background-color: #FFBB1C0D;
+ 
   text-align: center;
 }
 
 .values-section h2 {
-  color: #000000;
+  color: #000;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
@@ -592,24 +605,39 @@ p {
 }
 
 .value-card {
-  background-color: #3CAB900D;
+  background-color: rgba(60, 171, 144, 0.05);
   padding: 1.5rem;
   border-radius: 10px;
   text-align: left;
-  border: #3CAB90;
-  border-style: solid;
-  border-width: 2px;
+  border: 2px solid #3CAB90;
 }
 
-.value-card .value-icon {
-  height: 100px;
-  background-color: #3CAB90;
+/* Shared card icon styles */
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 1rem;
   border-radius: 5px;
 }
 
+/* Different icons for each card */
+.card-icon1 {
+  background-image: url('../assets/images/Customer Loyalty.png');
+}
+
+.card-icon2 {
+  background-image: url('../assets/images/Price Tag.png');
+}
+
+.card-icon3 {
+  background-image: url('../assets/images/Environment.png');
+}
+
 .value-card h3 {
-  color: #000000;
+  color: #000;
   margin: 0.5rem 0;
   font-size: 1.5rem;
 }
