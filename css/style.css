@@ -338,6 +338,8 @@ p {
   padding: 4rem 0;
   color: #fff;
   position: relative;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .sec3-background {
@@ -521,8 +523,9 @@ p {
 .innovators-cards {
   flex: 1 1 60%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
   gap: 1.5rem;
+  justify-content: start;
 }
 
 .innovator-card {
@@ -533,40 +536,68 @@ p {
   border: #3CAB90;
   border-style: solid;
   border-width: 2px;
+  width: auto;
+  max-width: 350px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .innovator-card .card-image {
   height: 100px;
-  background-color: #3CAB90;
   margin-bottom: 1rem;
   border-radius: 5px;
+  flex-shrink: 0;
+  
+}
+
+.placeholderImage{
+  padding-top: 20px;
+  opacity: 50%;
 }
 
 .card-image{
-   background: url("../assets/images/image 9.png") no-repeat center center/cover;
-   width: 225;
-   height: 49;
-   mix-blend-mode: Luminosity;
+  border-radius: 5px;
+  margin: 0 auto 1rem auto;
+  flex-shrink: 0;
+  position: relative;
+}
 
-   
-  }
+.card-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(60, 171, 144, 0.15);
+  opacity: 100%;
+  border-radius: 5px;
+}
 
 .innovator-card h3 {
   color: #000000;
-  margin: 0.5rem 0;
+  margin: 0 0 0.75rem 0;
   font-size: 1.5rem;
+  line-height: 1.2;
+  flex-shrink: 0;
 }
 
 .innovator-card p {
   color: #666;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+  flex-shrink: 0;
 }
 
 .innovator-card .view-link {
   color: #3CAB90;
   text-decoration: none;
   font-weight: 600;
+  margin-top: 0;
+  flex-shrink: 0;
 }
 
 .innovator-card .view-link:hover {
@@ -646,12 +677,14 @@ p {
   color: #666;
   font-size: 1rem;
 }
-
+/*testimonial styling*/
 .testimonial-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 40px;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 5rem;
   background-color: white;
   gap: 40px;
   flex-wrap: wrap;
@@ -663,8 +696,9 @@ p {
 }
 
 .quote-mark {
-  font-size: 100px;
-  color: rgba(60, 171, 144, 1);
+  width: 50px; /* Adjust size to fit your image */
+  height: auto;
+  
   top: -10px;
   left: -20px;
   z-index: 0;
@@ -672,29 +706,26 @@ p {
 
 .testimonial-title {
   font-weight: bold;
- 
   position: relative;
   z-index: 1;
   font-family: Inter;
-font-weight: 700;
-font-size: 48px;
-line-height: 64px;
-letter-spacing: 0%;
-
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0%;
 }
 
 .testimonial-subtitle {
   font-size: 16px;
-  color:rgba(28, 28, 28, 1);
+  color: rgba(28, 28, 28, 1);
   z-index: 1;
   position: relative;
   font-family: Inter;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-line-height: 32px;
-letter-spacing: 0%;
-
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0%;
 }
 
 .testimonial-right {
@@ -756,12 +787,11 @@ letter-spacing: 0%;
   margin: 0;
   flex-grow: 1;
   font-family: Inter;
-font-weight: 400;
-font-style: Regular;
-font-size: 24px;
-line-height: 150%;
-letter-spacing: 0%;
-
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 .testimonial-footer {
@@ -912,7 +942,7 @@ letter-spacing: 0%;
   padding: 20px;
   padding-top: 70px;
   padding-bottom: 60px;
-
+  
 
 }
 
@@ -923,6 +953,7 @@ letter-spacing: 0%;
   flex-wrap: wrap;
   margin-bottom: 20px;
   gap: 40px;
+
 }
 
 .footer-logo-nav {
@@ -933,8 +964,10 @@ letter-spacing: 0%;
 }
 
 .footer-logo {
-  width: 120px;
+  width: auto;
   height: auto;
+  opacity: 20%;
+  background-color: #101828;
 }
 
 .footer-nav {
