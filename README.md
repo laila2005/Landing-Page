@@ -18,7 +18,7 @@ A modern, responsive landing page for Solidarity Solar, a solar panel installati
 ## 🏗️ Project Structure
 
 ```
-Landing Page/
+Solar-Panel-Installers/
 │
 ├── index.html                 # Main HTML file
 ├── README.md                 # Project documentation
